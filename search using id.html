@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+           search for student
+        </title>
+        <link rel="stylesheet" href="project2.css" type="text/css">
+    </head>
+
+    <body>
+    <div class="topnav">
+        <img class="logo" src="download.jfif" alt="logo fci" >
+        <h2><a href="project2.html">HomePage</a></h2>
+        <h2><a href="sign_up.html" title="go to add new student">Add New Student</a></h2>
+        <h2><a href="HtmlPage.html" title="go to changing">Update And Delete Students</a></h2>
+        <h2><a href="search using name.html" title="go to activation search">Activation Search</a></h2>
+        <h2><a href="search using id.html"  title="go to change department">Change Department</a></h2>
+        <h2><a href="firstpage.html" title="go to search status">Searching Status</a></h2>
+    </div>
+    <div class="sid">
+        <script defer src="search by id.js"></script>
+        <form action = "select department.html" onsubmit="return checkSignUpForm();">
+            <div>
+                <label >Name</label>
+                <input type="text" placeholder="student name" id = "Name">
+                <label >ID</label>
+                <input type="text" placeholder="student id" autofocus required id = 'ID'>
+                <br>
+                <button value="submit">submit</button>
+                <input type="reset" value="reset">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

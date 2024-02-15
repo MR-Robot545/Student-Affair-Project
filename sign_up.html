@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign up</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="project2.css" type="text/css">
+</head>
+<body>
+<div class="topnav">
+    <img class="logo" src="download.jfif" alt="logo fci" >
+    <h2><a href="project2.html">HomePage</a></h2>
+    <h2><a href="sign_up.html" title="go to add new student">Add New Student</a></h2>
+    <h2><a href="HtmlPage.html" title="go to changing">Update And Delete Students</a></h2>
+    <h2><a href="search using name.html" title="go to activation search">Activation Search</a></h2>
+    <h2><a href="search using id.html"  title="go to change department">Change Department</a></h2>
+    <h2><a href="firstpage.html" title="go to search status">Searching Status</a></h2>
+</div>
+<div>
+    <br/>
+</div>
+<div class="add_student">
+    <h1>sign up</h1>
+    <form onsubmit=" return checkSignUpForm();"method="post">
+        <div>
+            <label>Name</label>
+            <input type="text"  placeholder="NAME" id="Name" />
+        </div>
+        <br />
+        <div>
+            <label>Email</label>
+            <input type="text"  placeholder="Enter Your email" id ="Email" />
+        </div>
+        <br />
+        <div>
+            <label>Id</label>
+            <input type="text"  placeholder="ID" id ="ID" />
+        </div>
+        <br />
+        <div>
+            <label>Status</label>
+            <select required>
+                <option value="" disabled selected hidden>Choose status</option>
+                <option>Active</option>
+                <option>Inactive</option>
+
+
+            </select>
+        </div>
+        <br />   
+        <div>
+            <label>Level</label>
+            <select required>
+                <option value="" disabled selected hidden>Choose Level</option>
+                <option>First</option>
+                <option>Second</option>
+                <option>Third</option>
+                <option>Fourth</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label>Department</label>
+            <select required>
+                <option value="" disabled selected hidden>Choose Department</option>
+                <option>General</option>
+                <option>Computer Science</option>
+                <option>Information System</option>
+                <option>Information Technology</option>
+                <option>Decision Support</option>
+                <option>Artificial Intelligence</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label>GPA</label>
+            <input type="number"  placeholder="GPA" id ="gpa" step="0.01" />
+        </div>
+        <br />
+        <div>
+            <label>Date of birth</label>
+            <input type="date" required />
+        </div>
+        <br />
+        <div >
+            <label> Gender</label>
+            <input type="radio" name="gender" />
+            <label>Male</label>
+
+            <input type="radio" name="gender" />
+            <label id="f">Female</label>
+        </div>
+        <br />
+        <div>
+            <label>Phone Number</label>
+            <input type="text" placeholder="phone number" id="phone" />
+        </div>
+        <br />
+        <div>
+            <input type="submit" />
+            <input type="reset" />
+        </div>
+        <br />
+
+    </form>
+
+</div>
+
+   
+</body>
+</html>

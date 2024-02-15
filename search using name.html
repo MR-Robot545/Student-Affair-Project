@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Search
+        </title>
+        <link rel="stylesheet" href="project2.css" type="text/css">
+    </head>
+    <body>
+    <div class="topnav">
+        <img class="logo" src="download.jfif" alt="logo fci" >
+        <h2><a href="project2.html">HomePage</a></h2>
+        <h2><a href="sign_up.html" title="go to add new student">Add New Student</a></h2>
+        <h2><a href="HtmlPage.html" title="go to changing">Update And Delete Students</a></h2>
+        <h2><a href="search using name.html" title="go to activation search">Activation Search</a></h2>
+        <h2><a href="search using id.html"  title="go to change department">Change Department</a></h2>
+        <h2><a href="firstpage.html" title="go to search status">Searching Status</a></h2>
+    </div>
+        <div class="search">
+        <form onsubmit=" return checkSignUpForm();" method="POST" id = "form">
+           <h1>Search for student</h1>
+        <div class = "inputControl">
+            <label >Student name</label>
+            <input type="text" name="studentname" id ="search" placeholder="Enter lowwercase letter">
+            <button type="submit">Search</button>
+        </div>
+        <span class="clear" onclick="document.getElementById('search').value = ''"></span>
+        </form>
+        <script defer src="search by name.js"> </script>
+        </div>
+    </body>
+</html>
